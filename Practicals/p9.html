@@ -1,0 +1,23 @@
+
+<h3 align="center" >The output can be seen on console</h3>
+<script>
+    // Copying, passing, and comparing by value
+    let x = 20
+    let y = x
+    x = 10
+    console.log('Copying, passing, and comparing by value Output: ' + y)
+
+    // Copying, passing, and comparing by reference
+    x = {name: "Yash"}
+    y = x
+    x.name = "yashasvi"
+    console.log('Copying, passing, and comparing by reference Output: ' + y.name)
+
+    // References themselves are passed by value
+    let count = 0
+    const increase_count = (count) => {
+        count++
+    }
+    increase_count(count)
+    console.log('References themselves are passed by value Output: ' + count)
+</script>
